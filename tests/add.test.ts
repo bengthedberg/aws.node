@@ -1,5 +1,5 @@
-import { add } from "#src/utils.ts";
+import { add } from '#src/utils.ts';
 
-it("should add two numbers", () => {
+it('should add two numbers', () => {
   expect(add(1, 2)).toBe(3);
 });

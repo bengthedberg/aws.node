@@ -1,24 +1,24 @@
-import type { Config } from "jest";
+import type { Config } from 'jest';
 
 const config: Config = {
   // Use ts-jest preset for testing TypeScript files with Jest
-  preset: "ts-jest",
+  preset: 'ts-jest',
   // Set the test environment to Node.js
-  testEnvironment: "node",
+  testEnvironment: 'node',
 
   // Define the root directory for tests and modules
-  roots: ["<rootDir>/tests"],
+  roots: ['<rootDir>/tests'],
 
   // Use ts-jest to transform TypeScript files
   transform: {
-    "^.+\\.tsx?$": "ts-jest",
+    '^.+\\.tsx?$': 'ts-jest'
   },
 
   // Regular expression to find test files
-  testRegex: "((\\.|/)(test|spec))\\.tsx?$",
+  testRegex: '((\\.|/)(test|spec))\\.tsx?$',
 
   // File extensions to recognize in module resolution
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node']
 };
 
 export default config;

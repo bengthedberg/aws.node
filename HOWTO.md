@@ -328,3 +328,8 @@ npm run format
 npm run lint
 npm run test
 ```
+
+## Add Express
+
+`npm install express serverless-http`
+`npm install @types/node @types/express --save-dev`
