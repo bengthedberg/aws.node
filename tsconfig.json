@@ -5,6 +5,6 @@
     "outDir": "./dist" /* Specify an output folder for all emitted files. */,
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "tests/todo.test.ts"],
   "exclude": ["node_modules", "dist"]
 }
