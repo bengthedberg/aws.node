@@ -4,11 +4,15 @@ import serverless from 'serverless-http';
 import awsLambda from 'aws-lambda';
 import todoRoutes from '#src/resources/todo/todo.routes.ts';
 import { jsonErrorHandler } from '#src/middleware/json-error.middleware.ts';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
-app.use(cors());
+const corsOrigin = process.env.CORS_ORIGIN;
+app.use(cors({ origin: corsOrigin }));
 app.use(express.json());
 
 // routes
